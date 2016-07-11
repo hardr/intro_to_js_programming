@@ -71,9 +71,9 @@ for (var i = 1; i <= 50; i++) {
 }
 
 //third bullet
+var multiples = 0;
 for (var i = 0; i < 1000; i++) {
-  var multiples = 0;
-  if (i % 3 === 0 || i % 5 === 0) {
+  if (!(i % 3) || !(i % 5)) {
     multiples += i;
   }
 }
